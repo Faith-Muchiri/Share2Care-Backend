@@ -42,7 +42,7 @@ class Api::V1::FarmersController < ApplicationController
     private
 
     def farmer_params
-       params.permit(:first_name, :last_name, :email, :password, :location, :role)
+       params.permit(:first_name, :last_name, :email, :password, :role)
     end
 
     def render_not_found

@@ -11,6 +11,8 @@ Rails.application.routes.draw do
       resources :consumers
       resources :donations
       resources :products
+            
+      post '/signup', to: 'users#create'
       post '/login', to: 'auth#create'
       get '/profile', to: 'users#profile'
     end

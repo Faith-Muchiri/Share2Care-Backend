@@ -7,11 +7,11 @@
 #   Character.create(name: "Luke", movie: movies.first)
 admin = Admin.create!(first_name: "John",last_name: "Doe", email: "johndoe@example.com", password: "password123")
 
-f1 = Farmer.create!(first_name: "John", last_name: "Smith", email: "johnsmith@gmail.com", password: "password123", location: "New York")
-f2 = Farmer.create!(first_name: "Jane", last_name: "Doe", email: "janedoe@gmail.com", password: "password123", location: "California")
-f3 = Farmer.create!(first_name: "Bob", last_name: "Johnson", email: "bobjohnson@gmail.com", password: "password123", location: "Texas")
-f4 = Farmer.create!(first_name: "Emily", last_name: "Williams", email: "emilywilliams@gmail.com", password: "password123", location: "Florida")
-f5 = Farmer.create!(first_name: "Michael", last_name: "Brown", email: "michaelbrown@gmail.com", password: "password123", location: "Georgia")
+f1 = Farmer.create!(first_name: "John", last_name: "Smith", email: "johnsmith@gmail.com", password: "password123")
+f2 = Farmer.create!(first_name: "Jane", last_name: "Doe", email: "janedoe@gmail.com", password: "password123")
+f3 = Farmer.create!(first_name: "Bob", last_name: "Johnson", email: "bobjohnson@gmail.com", password: "password123")
+f4 = Farmer.create!(first_name: "Emily", last_name: "Williams", email: "emilywilliams@gmail.com", password: "password123")
+f5 = Farmer.create!(first_name: "Michael", last_name: "Brown", email: "michaelbrown@gmail.com", password: "password123")
 
 c1 = Consumer.create!(first_name: "John", last_name: "Doe", email: "johndoe1@example.com", password: "J0hnDoe#1")
 c2 = Consumer.create!(first_name: "Jane", last_name: "Smith", email: "janesmith1@example.com", password: "J4n3Sm!th#1")

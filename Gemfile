@@ -52,3 +52,5 @@ gem "activestorage", "~> 7.0"
 gem "active_model_serializers", "~> 0.10.13"
 
 gem "faker", "~> 3.1"
+
+gem "jwt", "~> 2.6"

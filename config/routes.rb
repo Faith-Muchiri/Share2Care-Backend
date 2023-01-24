@@ -9,6 +9,7 @@ Rails.application.routes.draw do
       resources :admins
       resources :farmers
       resources :consumers
+      resources :donations
       post '/login', to: 'auth#create'
       get '/profile', to: 'users#profile'
     end

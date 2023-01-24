@@ -33,14 +33,14 @@ d10=Donation.create!(user_id: c1.id, product: "cucumbers", quantity: 5, date_don
 
 
 Product.create!([
-  { name: "Apple", price: 0.5, farmer_id: f1.id, consumer_id: c1.id},
-  { name: "Banana", price: 0.7, farmer_id: f2.id, consumer_id: c1.id},
-  { name: "Carrot", price: 0.3, farmer_id: f3.id, consumer_id: c2.id},
-  { name: "Tomato", price: 0.4, farmer_id: f4.id, consumer_id: c2.id},
-  { name: "Potato", price: 0.6, farmer_id: f5.id, consumer_id: c3.id},
-  { name: "Onion", price: 0.2, farmer_id: f1.id, consumer_id: c3.id},
-  { name: "Pepper", price: 0.8, farmer_id: f2.id, consumer_id: c4.id},
-  { name: "Corn", price: 0.9, farmer_id: f3.id, consumer_id: c4.id},
-  { name: "Cucumber", price: 0.5, farmer_id: f4.id, consumer_id: c5.id},
-  { name: "Squash", price: 0.7, farmer_id: f5.id, consumer_id: c5.id}
+  { name: "Apple", price: 0.5, quantity: 4, image_url: "https://img.freepik.com/free-photo/apples-red-fresh-mellow-juicy-perfect-whole-white-desk_179666-271.jpg?size=626&ext=jpg", farmer_id: f1.id, consumer_id: c1.id},
+  { name: "Banana", price: 0.7, quantity: 4, image_url: "https://img.freepik.com/free-photo/apples-red-fresh-mellow-juicy-perfect-whole-white-desk_179666-271.jpg?size=626&ext=jpg", farmer_id: f2.id, consumer_id: c1.id},
+  { name: "Carrot", price: 0.3, quantity: 5, image_url: "https://img.freepik.com/free-photo/carrot-background_1339-3261.jpg?size=626&ext=jpg", farmer_id: f3.id, consumer_id: c2.id},
+  { name: "Tomato", price: 0.4, quantity: 12, image_url: "https://img.freepik.com/free-photo/fresh-organic-red-tomatoes-black-plate-white-wooden-table-with-green-red-chili-peppers-green-peppers-black-peppercorns-salt-close-up-healthy-concept_114579-1204.jpg?size=626&ext=jpg", farmer_id: f4.id, consumer_id: c2.id},
+  { name: "Potato", price: 0.6, quantity: 10, image_url: "https://img.freepik.com/free-photo/rustic-unpeeled-potatoes-desks_144627-3901.jpg?size=626&ext=jpg", farmer_id: f5.id, consumer_id: c3.id},
+  { name: "Onion", price: 0.2, quantity: 15, image_url: "https://img.freepik.com/free-photo/side-view-basket-full-red-onions-wooden-background_141793-5655.jpg?size=626&ext=jpg", farmer_id: f1.id, consumer_id: c3.id},
+  { name: "Pepper", price: 0.8, quantity: 8, image_url: "https://img.freepik.com/free-photo/front-view-peppers-chopping-board-surrounded-by-peppers-cherry-tomatoes-amber-background_140725-130387.jpg?auto=format&h=200", farmer_id: f2.id, consumer_id: c4.id},
+  { name: "Corn", price: 0.9, quantity: 12, image_url: "https://img.freepik.com/premium-photo/corn-isolated-white-background_93675-36142.jpg?size=626&ext=jpg", farmer_id: f3.id, consumer_id: c4.id},
+  { name: "Cucumber", price: 0.5, quantity: 4, image_url: "https://img.freepik.com/premium-photo/cucumber-isolated-white_29402-751.jpg?size=626&ext=jpg", farmer_id: f4.id, consumer_id: c5.id},
+  { name: "Squash", price: 0.7, quantity: 3, image_url: "https://img.freepik.com/free-photo/front-view-fresh-sliced-pumpkins-dark-table-color-fruit-photo_140725-72972.jpg?size=626&ext=jpg", farmer_id: f5.id, consumer_id: c5.id}
 ])

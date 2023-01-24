@@ -19,9 +19,9 @@ class Api::V1::AdminsController < ApplicationController
         render json: @admins, serializer: AdminSerializer, status: :ok
     end
 
-    def profile
-        render json: { user: AdminSerializer.new(current_user) }, status: :accepted
-    end
+    # def profile
+    #     render json: { user: AdminSerializer.new(current_user) }, status: :accepted
+    # end
 
     def update
         @admin = find_admin

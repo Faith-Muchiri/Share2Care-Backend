@@ -14,9 +14,9 @@ class Api::V1::ConsumersController < ApplicationController
         render json: @consumers, status: :ok
     end
 
-    def profile
-        render json: { user: ConsumerSerializer.new(current_user) }, status: :accepted
-    end
+    # def profile
+    #     render json: { user: ConsumerSerializer.new(current_user) }, status: :accepted
+    # end
 
     def show
         @consumer = Consumer.find(params[:id])

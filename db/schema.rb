@@ -28,6 +28,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_24_141915) do
   create_table "products", force: :cascade do |t|
     t.string "name"
     t.float "price"
+    t.string "image_url"
+    t.integer "quantity"
     t.string "farmer_id"
     t.string "consumer_id"
     t.datetime "created_at", null: false

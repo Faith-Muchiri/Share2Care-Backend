@@ -19,9 +19,9 @@ class Api::V1::FarmersController < ApplicationController
         render json: @farmers, serializer: farmerSerializer, status: :ok
     end
 
-    def profile
-        render json: { user: FarmerSerializer.new(current_user) }, status: :accepted
-    end
+    # def profile
+    #     render json: { user: FarmerSerializer.new(current_user) }, status: :accepted
+    # end
 
 
       #PATCH   /farmers/:id

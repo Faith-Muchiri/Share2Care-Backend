@@ -30,3 +30,17 @@ d7=Donation.create!(user_id: c4.id, product: "carrots", quantity: 35, date_donat
 d8=Donation.create!(user_id: c3.id, product: "peppers", quantity: 25, date_donated: "2022-07-08", status: "completed")
 d9=Donation.create!(user_id: c2.id, product: "corn", quantity: 15, date_donated: "2022-07-09", status: "completed")
 d10=Donation.create!(user_id: c1.id, product: "cucumbers", quantity: 5, date_donated: "2022-07-10", status: "completed")
+
+
+Product.create!([
+  { name: "Apple", price: 0.5, farmer_id: f1.id, consumer_id: c1.id},
+  { name: "Banana", price: 0.7, farmer_id: f2.id, consumer_id: c1.id},
+  { name: "Carrot", price: 0.3, farmer_id: f3.id, consumer_id: c2.id},
+  { name: "Tomato", price: 0.4, farmer_id: f4.id, consumer_id: c2.id},
+  { name: "Potato", price: 0.6, farmer_id: f5.id, consumer_id: c3.id},
+  { name: "Onion", price: 0.2, farmer_id: f1.id, consumer_id: c3.id},
+  { name: "Pepper", price: 0.8, farmer_id: f2.id, consumer_id: c4.id},
+  { name: "Corn", price: 0.9, farmer_id: f3.id, consumer_id: c4.id},
+  { name: "Cucumber", price: 0.5, farmer_id: f4.id, consumer_id: c5.id},
+  { name: "Squash", price: 0.7, farmer_id: f5.id, consumer_id: c5.id}
+])

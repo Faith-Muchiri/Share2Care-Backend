@@ -6,7 +6,7 @@ class Api::V1::DonationsController < ApplicationController
     end
 
     def create
-        @Donation = Donation.create(donation_params)
+        @donation = Donation.create(donation_params)
         if @donation.valid?
         render json: { donation: DonationSerializer.new(@donation) }, status: :created
         else

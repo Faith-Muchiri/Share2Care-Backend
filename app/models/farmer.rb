@@ -1,0 +1,2 @@
+class Farmer < User
+end

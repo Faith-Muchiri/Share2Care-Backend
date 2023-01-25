@@ -1,13 +1,13 @@
-class Api::V1::ConsumersController < ApplicationController
-    def create
-        @consumer = Consumer.create(consumer_params)
-        if @consumer.valid?
-            @token = encode_token({consumer_id: @consumer.id})
-            render json: { consumer: ConsumerSerializer.new(@consumer), jwt: @token}, status: :created
-        else
-            render json: { error: 'failed to create consumer' }, status: :unprocessable_entity
-        end
-    end
+class Api::V1::ConsumersController < Api::V1::UsersController
+    # def create
+    #     @consumer = Consumer.create(consumer_params)
+    #     if @consumer.valid?
+    #         @token = encode_token({consumer_id: @consumer.id})
+    #         render json: { consumer: ConsumerSerializer.new(@consumer), jwt: @token}, status: :created
+    #     else
+    #         render json: { error: 'failed to create consumer' }, status: :unprocessable_entity
+    #     end
+    # end
 
     def index
         @consumers = Consumer.all

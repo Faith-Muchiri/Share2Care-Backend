@@ -39,7 +39,7 @@ class Api::V1::ProductsController < ApplicationController
     private
 
     def product_params
-        params.permit(:name, :price, :quantity, :image_url :farmer_id, :consumer_id)
+        params.permit(:name, :price, :quantity, :image_url, :farmer_id, :consumer_id)
     end
  
      def render_not_found

@@ -1,13 +1,15 @@
-class Api::V1::FarmersController < ApplicationController
-    def create
-        @farmer = Farmer.create(farmer_params)
-        if @farmer.valid?
-            @token = encode_token({farmer_id: @farmer.id})
-            render json: { farmer: FarmerSerializer.new(@farmer), jwt: @token}, status: :created
-        else
-            render json: { error: 'failed to create farmer' }, status: :unprocessable_entity
-        end
-    end
+class Api::V1::FarmersController < Api::V1::UsersController
+
+
+    # def create
+    #     @farmer = Farmer.create(farmer_params)
+    #     if @farmer.valid?
+    #         @token = encode_token({farmer_id: @farmer.id})
+    #         render json: { farmer: FarmerSerializer.new(@farmer), jwt: @token}, status: :created
+    #     else
+    #         render json: { error: 'failed to create farmer' }, status: :unprocessable_entity
+    #     end
+    # end
 
     def index
         @farmers = Farmer.all
